@@ -34,5 +34,7 @@ try:
         f.write(nonce.hex())
         f.close()
 
+    print('Encrypted File Path: ./generated_key/{}.hex.key'.format(encryptedFileName))
+
 except Exception as e:
     print('Exception: {}'.format(e.__str__()))
